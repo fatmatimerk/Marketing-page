@@ -1,0 +1,520 @@
+#myPage{
+    background-image: url(row-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 38%;
+   color:#cd67ae;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+/*---------------------------------------------navbar style--------------------------------------*/
+.nav{
+    grid-area: na; 
+    background-color: rgb(124, 3, 139);
+}
+#log{
+
+    font-size: 80px; margin-left: 10%;
+    color:#f7eddf;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 0px 10px gray;
+  
+}
+
+#myNavbar{
+    font-size: 20px;
+    font-weight:bolder; 
+}
+.nlink{
+    color:white; 
+    text-decoration: none;
+}
+.nlink:hover{
+    color:chocolate;
+    background-color: #df82c3;
+    border-radius: 10px 10px 10px 10px;
+}
+.icon-bar{
+    background-color: #cd67ae;
+}
+
+#btn{
+   background-color: #f7eddf;
+}
+
+/*------------------------------------------content style------------------------------------*/
+.container{
+
+    display: grid;
+    grid-template-areas:
+     "na"
+     "con1"
+     "con2"
+     "con4"
+     "con3"
+     "fo"
+    ;
+    grid-gap: 30vh;
+    text-align: center;
+}
+
+
+.content1{
+ 
+    grid-area: con1;
+    display: grid; margin: auto;
+    grid-template-areas: 
+    "cola"
+    "coim"
+    ;
+    grid-gap:10vh;
+}
+
+.content-label{
+    grid-area: cola;
+}
+.content-label h1{
+    font-size: 3.5em;
+    font-weight:bolder;
+}
+.content-label h2{
+    font-weight:bolder;
+}
+.content-img{
+   grid-area: coim;
+}
+.mg1{
+    width: 80%;
+}
+
+
+.content2{
+    grid-area: con2; 
+    display: grid; margin: auto;
+    grid-template-areas: 
+    "colf cor"
+    ;
+    background-image: url(ro-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 75% ;
+    background-position: right;
+}
+/*----------carousel style-----------*/
+
+.content2-left{
+    grid-area:colf ; margin: auto;
+    
+}
+#myCarousel{
+    width:550px; height: 500px;
+    border: #cda567 solid 1px;
+    border-radius: 10px 10px 10px 10px; 
+ 
+}
+#myCarousel img{
+    height: 300px;  width:80%;  margin: auto; margin-top: 18%;
+}
+.butt{
+    margin-top: 10%;
+}
+.btn{
+    color: black;
+    background-color: #daabc8;
+}
+.btn:hover{
+    background-color: #df7cb9;
+}
+.content2-right{
+    grid-area:cor ;  margin: auto;
+    direction: rtl; text-align:start; width: 70%;
+
+}
+
+.content2-right p{
+    font-size: 2em; 
+}
+.content2-right span{
+    color:#948990; 
+
+}
+
+
+/*-------------------contact style------------------------*/
+.content3{
+    grid-area:con3 ;
+    background-color: #f7eddf;
+    font-size: larger; font-weight: bolder;
+
+}
+
+.soc{
+    height: 100px; 
+}
+.soc svg{
+    margin-top: 3%; 
+}
+#s :hover{
+    width:6%; 
+}
+
+#s1{
+    background-color:blue ; width:2%;
+    border-radius: 50%; 
+}
+
+#s2{
+    background-color:green; width:2%;
+    border-radius: 50%; 
+}
+
+#s3{
+    background-color:rgb(131, 6, 89); width:2%;
+    border-radius: 30%; 
+
+}
+
+#s4{
+    background-color:blue ; width:2%;
+    border-radius: 50%; 
+    
+}
+
+/*-------------------content4 style------------------------*/
+.main-content4{
+    grid-area: con4; 
+    display: grid;
+    grid-template-areas:
+    "mco5co"
+    "mo"
+    ;
+    grid-gap:5vh;
+}
+.main-content4-content{
+    grid-area:mco5co ; 
+    display: grid; margin: auto;
+    grid-template-areas:
+    "bo1 bo2 bo3 bo4"
+    ;
+}
+.main-content4-content img{
+   width: 150px; margin-top:13%;
+   
+}
+.img-box{
+    border: #cda567 solid 1px; width: 270px; height: 30vh;
+    border-radius: 10px 10px 10px 10px; 
+}
+.box1{
+    grid-area:bo1 ; 
+    
+}
+.box2{
+    grid-area:bo2 ;
+}
+.box3{
+    grid-area:bo3 ;
+}
+.box4{
+    grid-area:bo4 ;
+}
+.b1{
+    background-color: black; color: white; float: right;
+    width:35% ; margin-right: 10%;
+}
+.b2{
+    width: 70%; color: black;  direction: rtl; text-align: start;
+    float: right; margin-right: 10%;
+}
+.b2 span{
+   color: rgb(180, 180, 180);
+}
+.more{
+    grid-area:mo ; 
+    border-radius:10px 10px 10px 10px; width: 100px;
+    border: 1px solid gray; margin: auto;
+}
+.more:hover{
+    background-color: #868585;
+}
+.more a{
+  color: #949494;
+}
+.more a:hover{
+    text-decoration: none;
+}
+
+
+/*-------------footer style-------------*/
+
+.footer{
+    grid-area: fo ;
+    background-image: url(row-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 38%;
+}
+
+
+#ru{
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+}
+
+
+@media screen and (min-device-width : 200px) and (max-device-width : 350px){
+    .mg1{
+        width: 100%;
+    } 
+    .content2{
+        grid-area: con2; 
+        display: grid; margin: auto;
+        grid-template-areas: 
+        "cor"
+        "colf"
+        ;
+        grid-gap:10vh;
+    }
+
+    #myCarousel{
+        width:200px; height: 250px; margin: auto;
+        border: #cda567 solid 1px;
+        border-radius: 10px 10px 10px 10px; 
+    }
+    #myCarousel img{
+        height: 150px;  width:80%;  margin: auto; margin-top: 18%;
+    }
+    .content2-right{
+        grid-area:cor ;  margin: auto; text-align: center;
+        direction: rtl;  width: 70%;
+    }
+    .soc{
+        height: 80px; 
+    }
+    #s1 , #s2 , #s3 , #s4{
+        width: 5%;
+    }
+    #s :hover{
+        width:10%; 
+    }
+    .main-content4-content{
+        width: 80%;
+         grid-template-areas:
+         "bo1"
+         "bo2"
+         "bo3"
+         "bo4"
+         ;
+         grid-gap:5vh;
+     } 
+
+     .main-content4-content img{
+        width: 150px; margin-top:15%;
+        
+     }
+     .img-box{
+         border: #cda567 solid 1px; width: 200px; height: 35vh;
+         border-radius: 10px 10px 10px 10px; 
+     }
+     .b1{
+         background-color: black; color: white; float: right;
+         width:35% ; margin-right: 10%;
+     }
+     .b2{
+         width: 70%; color: black;  direction: rtl; text-align: start;
+         float: right; margin-right: 10%;
+     }
+ 
+}
+
+@media screen and (min-device-width : 351px) and (max-device-width : 480px){
+
+    #myPage{
+        font-size: 16px;
+    }
+ 
+    .nlink{
+       margin-top: 10%;
+    }
+    .mg1{
+        width: 95%;
+    }    
+    .content2{
+        grid-area: con2; 
+        display: grid; margin: auto;
+        grid-template-areas: 
+        "cor"
+        "colf"
+        ;
+        grid-gap:10vh;
+    }
+    .content2-left{
+        grid-area:colf ; margin: auto;
+    
+    }
+    #myCarousel{
+        width:300px; height: 300px; margin: auto;
+        border: #cda567 solid 1px;
+        border-radius: 10px 10px 10px 10px; 
+    }
+    #myCarousel img{
+        height: 200px;  width:80%;  margin: auto; margin-top: 18%;
+    }
+ 
+    .content2-right{
+        grid-area:cor ;  margin: auto; text-align: center;
+        direction: rtl;  width: 70%;
+    }
+    
+    .content2-right p{
+        font-size: 1.5em; 
+    }
+    .content2-right span{
+        font-size:x-small;
+        color:#948990; 
+    
+    }
+    .content3 h1{
+        font-size:16px; font-weight: bolder;
+    
+    }
+    
+    .soc{
+        height: 80px; 
+    }
+    #s1 , #s2 , #s3 , #s4{
+        width: 5%;
+    }
+    #s :hover{
+        width:10%; 
+    }
+    .main-content4-content{
+       width: 80%;
+        grid-template-areas:
+        "bo1"
+        "bo2"
+        "bo3"
+        "bo4"
+        ;
+        grid-gap:5vh;
+    } 
+    .main-content4-content img{
+       width: 150px; margin-top:15%;
+       
+    }
+    .img-box{
+        border: #cda567 solid 1px; width: 260px; height: 35vh;
+        border-radius: 10px 10px 10px 10px; 
+    }
+    .b1{
+        background-color: black; color: white; float: right;
+        width:35% ; margin-right: 10%;
+    }
+    .b2{
+        width: 70%; color: black;  direction: rtl; text-align: start;
+        float: right; margin-right: 10%;
+    }
+ 
+}
+
+
+@media screen and (min-device-width : 481px) and (max-device-width : 1200px){
+
+    #myPage{
+        font-size: 16px;
+    }
+   
+    .nlink{
+        margin-top: 10%;
+    }
+    
+    #myCarousel{
+        margin-top: 10%; width: 100%;
+    }
+    #myCarousel img{
+        height: 500px;  width:550px;
+        margin-left: 8%;
+    }
+    
+    .mg1{
+        width: 95%;
+    }    
+    .content2{
+        grid-area: con2; 
+        display: grid; margin: auto;
+        grid-template-areas: 
+        "cor"
+        "colf"
+        ;
+        grid-gap:10vh;
+    }
+    .content2-left{
+        grid-area:colf ; margin: auto;
+    
+    }
+    #myCarousel{
+        width:400px; height: 350px; margin: auto;
+        border: #cda567 solid 1px;
+        border-radius: 10px 10px 10px 10px; 
+    }
+    #myCarousel img{
+        height: 200px;  width:80%;  margin: auto; margin-top: 18%;
+    }
+ 
+    .content2-right{
+        grid-area:cor ;  margin: auto; text-align: center;
+        direction: rtl;  width: 70%;
+    }
+    
+    .content2-right p{
+        font-size: 1.5em; 
+    }
+    .content2-right span{
+        font-size:x-small;
+        color:#948990; 
+    
+    }
+    .content3 h1{
+        font-size:16px; font-weight: bolder;
+    
+    }
+    
+    .soc{
+        height: 80px; 
+    }
+    #s1 , #s2 , #s3 , #s4{
+        width: 4%;
+    }
+    #s :hover{
+        width:10%; 
+    }
+    .main-content4-content{
+       margin: auto; 
+        grid-template-areas:
+        "bo1 bo2" 
+        "bo3 bo4"
+        ;
+        grid-gap:3vh;
+    } 
+  
+     .main-content4-content img{
+        width: 150px; margin-top:10%;
+        
+    }
+    .box1 , .box2 , .box3 ,.box4 {
+        width: 90%; 
+    }
+     .img-box{
+         border: #cda567 solid 1px; width: 220px; height: 35vh;
+         border-radius: 10px 10px 10px 10px; 
+    }
+    .b1{
+        background-color: black; color: white; 
+        width:60% ; 
+    }
+    .b2{
+        width: 80%; color: black;  direction: rtl; text-align: start;  
+         
+    }
+
+}
